@@ -1,0 +1,11 @@
+[package]
+name = "crane-unused-repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+noise = "0.9"
+
+[patch.crates-io]
+noise = { git = "https://github.com/Razaekel/noise-rs.git", rev = "fec36c8" }
+image = { git = "https://github.com/image-rs/image.git", rev = "78167c3" }
